@@ -1,5 +1,5 @@
 class FizzBuzz:
     def convert(self, num):
-        if num == 3:
+        if num % 3 == 0:
             return "Fizz"
         return f"{num}"
