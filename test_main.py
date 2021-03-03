@@ -26,10 +26,6 @@ class TestFizzBuzz:
                 # 実行＆検証
                 self.assertEqual(self.fizzbuzz.convert(1), "1")
 
-            def test_2を渡すと文字列2を返す(self):
-                # 実行＆検証
-                self.assertEqual(self.fizzbuzz.convert(2), "2")
-
 if __name__ == "__main__":
     from unittest import main
 
