@@ -18,11 +18,9 @@ class TestFizzBuzz:
                 self.assertEqual(self.fizzbuzz.convert(5), "Buzz")
 
         class その他の数のときはそのまま文字列に変換する(TestCase):
-            def setUp(self):
+            def test_1を渡すと文字列1を返す(self):
                 # 準備
                 self.fizzbuzz = FizzBuzz()
-
-            def test_1を渡すと文字列1を返す(self):
                 # 実行＆検証
                 self.assertEqual(self.fizzbuzz.convert(1), "1")
 
