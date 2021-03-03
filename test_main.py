@@ -17,3 +17,7 @@ class TestFizzBuzz(TestCase):
     def test_3を渡すと文字列Fizzを返す(self):
         # 実行＆検証
         self.assertEqual(self.fizzbuzz.convert(3), "Fizz")
+
+    def test_5を渡すと文字列Buzzを返す(self):
+        # 実行＆検証
+        self.assertEqual(self.fizzbuzz.convert(5), "Buzz")
