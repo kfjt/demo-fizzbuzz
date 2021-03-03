@@ -3,19 +3,6 @@ from main import FizzBuzz
 
 class TestFizzBuzz:
     class Test_convertメソッドは数を文字列に変換する:
-        class 数を文字列に変換する(TestCase):
-            def setUp(self):
-                # 準備
-                self.fizzbuzz = FizzBuzz()
-
-            def test_1を渡すと文字列1を返す(self):
-                # 実行＆検証
-                self.assertEqual(self.fizzbuzz.convert(1), "1")
-
-            def test_2を渡すと文字列2を返す(self):
-                # 実行＆検証
-                self.assertEqual(self.fizzbuzz.convert(2), "2")
-
         class _3の倍数のときは数の代わりにFizzに変換する(TestCase):
             def test_3を渡すと文字列Fizzを返す(self):
                 # 準備
@@ -29,6 +16,19 @@ class TestFizzBuzz:
                 self.fizzbuzz = FizzBuzz()
                 # 実行＆検証
                 self.assertEqual(self.fizzbuzz.convert(5), "Buzz")
+
+        class その他の数のときはそのまま文字列に変換する(TestCase):
+            def setUp(self):
+                # 準備
+                self.fizzbuzz = FizzBuzz()
+
+            def test_1を渡すと文字列1を返す(self):
+                # 実行＆検証
+                self.assertEqual(self.fizzbuzz.convert(1), "1")
+
+            def test_2を渡すと文字列2を返す(self):
+                # 実行＆検証
+                self.assertEqual(self.fizzbuzz.convert(2), "2")
 
 if __name__ == "__main__":
     from unittest import main
